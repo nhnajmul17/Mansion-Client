@@ -2,9 +2,11 @@ import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import logo from '../../../images/logo.jpg'
 
 const Navigation = () => {
+    const { user, logOut } = useAuth();
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" sx={{ bgcolor: '#3BB7B7' }}>
@@ -16,7 +18,7 @@ const Navigation = () => {
                     <Typography variant="h5" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
                         Mansion Residence
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    {user?.email ? <Button onClick={logOut} color="inherit">Logout</Button> : <Link style={{ textDecoration: 'none', color: 'white' }} to='/login'> <Button color="inherit">Login</Button></Link>}
                 </Toolbar>
             </AppBar>
         </Box >
