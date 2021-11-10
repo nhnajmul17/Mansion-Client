@@ -20,8 +20,8 @@ const Review = () => {
     }, [])
     return (
 
-        <Box style={bgBanner} sx={{ mb: 5 }}>
-            <Typography variant='h5' sx={{ color: 'warning.main', fontWeight: 'bold', mt: 5 }}>
+        <Box style={bgBanner} sx={{ m: 5 }}>
+            <Typography variant='h5' sx={{ color: '#3BB7B7', fontWeight: 'bold', mt: 5 }}>
                 TESTIMONIAL
             </Typography>
             <Typography variant='h3' sx={{ fontStyle: 'oblique', fontWeight: 'bold', mb: 3 }} color="text.secondary">

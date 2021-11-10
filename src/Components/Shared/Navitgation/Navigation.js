@@ -1,37 +1,25 @@
+import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { Box } from '@mui/system';
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../../images/logo.jpg'
 
 const Navigation = () => {
     return (
-        <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Container>
-                <Navbar.Brand as={Link} to="/home">
-                    <img
-                        alt=""
-                        src={logo}
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
-                    />
-                </Navbar.Brand>
-                <Navbar.Brand className='fw-bold' style={{ color: '#3BB7B7' }} as={Link} to="/home">Mansion Residence</Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link as={Link} to="/home">Home</Nav.Link>
-                        <Nav.Link as={Link} to="/apartments">Apartments</Nav.Link>
-                    </Nav>
-                    <Nav>
-                        <Nav.Link href="#deets">More deets</Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            Dank memes
-                        </Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <Box sx={{ flexGrow: 1 }}>
+            <AppBar position="static" sx={{ bgcolor: '#3BB7B7' }}>
+                <Toolbar>
+                    <img src={logo} style={{ width: '50px', height: '50px', marginRight: '10px' }} alt="" />
+                    <Link style={{ textDecoration: 'none', color: 'white', margin: '5px', fontWeight: 'bold' }} to='/home'>Home</Link>
+                    <Link style={{ textDecoration: 'none', color: 'white', margin: '5px', fontWeight: 'bold' }} to='/apartments'>Apartments</Link>
+
+                    <Typography variant="h5" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
+                        Mansion Residence
+                    </Typography>
+                    <Button color="inherit">Login</Button>
+                </Toolbar>
+            </AppBar>
+        </Box >
 
     );
 };

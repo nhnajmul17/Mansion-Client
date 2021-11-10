@@ -14,7 +14,7 @@ import feature4 from '../../../../images/features/feature4.JPG'
 const Features = () => {
     return (
 
-        <Box sx={{ flexGrow: 1, margin: 5 }}>
+        <Box sx={{ flexGrow: 1, margin: 5, paddingTop: 5 }}>
             <Typography variant='h4' sx={{ fontStyle: 'oblique', fontWeight: 'bold', mb: 3 }} color="text.secondary">Living your way starts here </Typography>
             <Typography variant='h6' sx={{ mb: 3 }}>Thoughtfully Furnished & Locally Inspired  </Typography>
             <Grid container spacing={2}>
