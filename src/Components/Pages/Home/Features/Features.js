@@ -15,8 +15,8 @@ const Features = () => {
     return (
 
         <Box sx={{ flexGrow: 1, margin: 5 }}>
-            <Typography variant='h3' sx={{ fontWeight: 'bold', mb: 3 }} color="text.secondary">Living your way starts here </Typography>
-            <Typography variant='h5' sx={{ mb: 3 }}>Thoughtfully Furnished & Locally Inspired  </Typography>
+            <Typography variant='h4' sx={{ fontStyle: 'oblique', fontWeight: 'bold', mb: 3 }} color="text.secondary">Living your way starts here </Typography>
+            <Typography variant='h6' sx={{ mb: 3 }}>Thoughtfully Furnished & Locally Inspired  </Typography>
             <Grid container spacing={2}>
                 <Grid item xs={12} md={3}>
                     <Card sx={{ minWidth: 275, border: 0, boxShadow: 0 }}>

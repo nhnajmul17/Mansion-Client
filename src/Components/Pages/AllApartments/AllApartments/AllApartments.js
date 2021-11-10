@@ -1,13 +1,13 @@
 import React from 'react';
 import Navigation from '../../../Shared/Navitgation/Navigation';
 
-const Properties = () => {
+const AllApartments = () => {
     return (
         <div>
             <Navigation></Navigation>
-            <h2>THis is properties</h2>
+            <h1>All Apartments here</h1>
         </div>
     );
 };
 
-export default Properties;
+export default AllApartments;
