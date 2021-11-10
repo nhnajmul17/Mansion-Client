@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
+import './Banner.css'
 
 const Banner = () => {
     return (
@@ -12,7 +13,7 @@ const Banner = () => {
                     alt="First slide"
                 />
 
-                <Carousel.Caption>
+                <Carousel.Caption className='banner-color'>
                     <h1 className=' fw-bold text-secondary'>CONVENIENT LOCATION</h1>
                     <h5 className="fs-1 fw-bold text-white fst-italic">Beautiful Spaces <br />
                         In The Best Places</h5>
@@ -25,7 +26,7 @@ const Banner = () => {
                     src="https://i.ibb.co/BTY1hsy/banner2.jpg"
                     alt="Second slide"
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className='banner-color'>
                     <h1 className='fw-bold text-secondary'>CONVENIENT LOCATION</h1>
                     <h5 className="fs-1 fw-bold text-white fst-italic">Beautiful Spaces <br />
                         In The Best Places</h5>
@@ -37,7 +38,7 @@ const Banner = () => {
                     src="https://i.ibb.co/5xqZZXp/banner3.jpg"
                     alt="Third slide"
                 />
-                <Carousel.Caption>
+                <Carousel.Caption className='banner-color'>
                     <h1 className=' fw-bold text-secondary'>CONVENIENT LOCATION</h1>
                     <h5 className="fs-1 fw-bold text-white fst-italic">Beautiful Spaces <br />
                         In The Best Places</h5>

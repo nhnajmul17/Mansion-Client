@@ -1,0 +1,212 @@
+[
+  {
+    "key": 1,
+    "picture": "https://i.ibb.co/gWNgN66/apartment1.jpg",
+    "name": "Senior Apartments",
+    "room": "3",
+    "bath": "3",
+    "parking": "Yes",
+    "sqft": "1250",
+    "price": "20000",
+    "about": "Welcome to your new home! We carefully select our upscale apartments to ensure you are always located in the best parts of the City. We offer remote-ready properties with high-speed internet and which are professionally cleaned, are fully furnished, and must pass a 100-point inspection. Each furnished short-term rental includes the building’s amenities like pools and gyms, secured parking, and more to make your stay comfortable, fun, and hassle-free! Get out of town and stay with us for a while.\r\n"
+  },
+  {
+    "key": 2,
+    "picture": "https://i.ibb.co/tJP4fsD/apartment2.jpg",
+    "room": "3",
+    "bath": "2",
+    "parking": "Yes",
+    "sqft": "1000",
+    "price": "18000",
+    "name": "Duplex Apartments",
+    "about": "Welcome to your Duplex Apartment! Our Duplex apartments are the ultimate in luxury and are located in the most sought after locations in each city. We provide an extra soft lounge sofa to relax, a 60” smart television, W Hotel® bedding, and upgraded kitchenware as featured in The Chef Package.\r\n"
+  },
+  {
+    "key": 3,
+    "picture": "https://i.ibb.co/rpZ772F/apartment3.jpg",
+    "room": "4",
+    "bath": "3",
+    "parking": "Yes",
+    "sqft": "1550",
+    "price": "35000",
+    "name": "Modern House",
+    "about": "Welcome to your new home! We carefully select our upscale apartments to ensure you are always located in the best parts of the City. We offer remote-ready properties with high-speed internet and which are professionally cleaned, are fully furnished, and must pass a 100-point inspection. Each furnished short-term rental includes the building’s amenities like pools and gyms, secured parking, and more to make your stay comfortable, fun, and hassle-free! Get out of town and stay with us for a while.\r\n"
+  },
+  {
+    "key": 4,
+    "picture": "https://i.ibb.co/4SJjfVk/apartment4.jpg",
+    "room": "3",
+    "bath": "2",
+    "parking": "Yes",
+    "sqft": "1150",
+    "price": "25000",
+    "name": "Modern Office",
+    "about": "Welcome to your Modern Office! Our Modern Office are the ultimate in luxury and are located in the most sought after locations in each city. We provide an extra soft lounge sofa to relax, a 60” smart television, W Hotel® bedding, and upgraded kitchenware as featured in The Chef Package.\r\n"
+  },
+  {
+    "key": 5,
+    "picture": "https://i.ibb.co/JjkfRwv/apartment5.jpg",
+    "room": "4",
+    "bath": "2",
+    "parking": "Yes",
+    "sqft": "1650",
+    "price": "45000",
+    "name": "Premium Office Suit",
+    "about": "Welcome to your Premium Office Suit! Our Premium Office Suit are the ultimate in luxury and are located in the most sought after locations in each city. We provide an extra soft lounge sofa to relax, a 60” smart television, W Hotel® bedding, and upgraded kitchenware as featured in The Chef Package.\r\n"
+  },
+  {
+    "key": 6,
+    "picture": "https://i.ibb.co/fQXwDsX/apartment6.jpg",
+    "room": "2",
+    "bath": "1",
+    "parking": "No",
+    "sqft": "900",
+    "price": "12000",
+    "name": "Studio Apartments",
+    "about": "Welcome to your new home! We carefully select our upscale apartments to ensure you are always located in the best parts of the City. We offer remote-ready properties with high-speed internet and which are professionally cleaned, are fully furnished, and must pass a 100-point inspection. Each furnished short-term rental includes the building’s amenities like pools and gyms, secured parking, and more to make your stay comfortable, fun, and hassle-free! Get out of town and stay with us for a while.\r\n"
+  },
+  {
+    "key": 7,
+    "picture": "https://i.ibb.co/X4ZjtDt/apartment7.jpg",
+    "name": "Co-working Apartments",
+    "room": "3",
+    "bath": "2",
+    "parking": "No",
+    "sqft": "1100",
+    "price": "18000",
+    "about": "Welcome to your new home! We carefully select our upscale apartments to ensure you are always located in the best parts of the City. We offer remote-ready properties with high-speed internet and which are professionally cleaned, are fully furnished, and must pass a 100-point inspection. Each furnished short-term rental includes the building’s amenities like pools and gyms, secured parking, and more to make your stay comfortable, fun, and hassle-free! Get out of town and stay with us for a while.\r\n"
+  },
+  {
+    "key": 8,
+    "picture": "https://i.ibb.co/mG6ZyVj/apartment8.jpg",
+    "name": "Minimalist Apartments",
+    "room": "2",
+    "bath": "1",
+    "parking": "No",
+    "sqft": "1050",
+    "price": "13000",
+    "about": "Welcome to your new home! We carefully select our upscale apartments to ensure you are always located in the best parts of the City. We offer remote-ready properties with high-speed internet and which are professionally cleaned, are fully furnished, and must pass a 100-point inspection. Each furnished short-term rental includes the building’s amenities like pools and gyms, secured parking, and more to make your stay comfortable, fun, and hassle-free! Get out of town and stay with us for a while.\r\n"
+  },
+  {
+    "key": 9,
+    "picture": "https://i.ibb.co/T17t6rK/apartment9.jpg",
+    "name": "Modern Apartments",
+    "room": "3",
+    "bath": "3",
+    "parking": "Yes",
+    "sqft": "1550",
+    "price": "24000",
+    "about": "Welcome to your new home! We carefully select our upscale apartments to ensure you are always located in the best parts of the City. We offer remote-ready properties with high-speed internet and which are professionally cleaned, are fully furnished, and must pass a 100-point inspection. Each furnished short-term rental includes the building’s amenities like pools and gyms, secured parking, and more to make your stay comfortable, fun, and hassle-free! Get out of town and stay with us for a while. \r\n"
+  },
+  {
+    "key": 10,
+    "picture": "https://i.ibb.co/zSwyqtX/apartment10.jpg",
+    "name": "Luxury Apartments",
+    "room": "4",
+    "bath": "3",
+    "parking": "Yes",
+    "sqft": "1900",
+    "price": "42000",
+    "about": "Welcome to your Luxury Apartments! Our Luxury Apartments Suit are the ultimate in luxury and are located in the most sought after locations in each city. We provide an extra soft lounge sofa to relax, a 60” smart television, W Hotel® bedding, and upgraded kitchenware as featured in The Chef Package.\r\n"
+  },
+  {
+    "key": 11,
+    "picture": "https: //i.ibb.co/W6S5C0f/news5.jpg",
+    "title": "North Hanriver Bike Riding - Seoul to Chuncheon",
+    "about": "Labore voluptate duis esse nisi fugiat occaecat eu non eu esse labore cillum reprehenderit. Occaecat deserunt et ea sit tempor reprehenderit incididunt ullamco Lorem cillum magna commodo eiusmod.\r\n"
+  },
+  {
+    "key": 12,
+    "picture": "https: //i.ibb.co/ncX9TRC/news6.jpg",
+    "title": "Seoul Moonlight Tour",
+    "about": "Labore voluptate duis esse nisi fugiat occaecat eu non eu esse labore cillum reprehenderit. Occaecat deserunt et ea sit tempor reprehenderit incididunt ullamco Lorem cillum magna commodo eiusmod.\r\n"
+  },
+  {
+    "key": 13,
+    "picture": "https://i.ibb.co/k1CZv0n/famousplace.jpg",
+    "category": "feature",
+    "price": 9.99,
+    "name": "Famous places",
+    "about": "places of our clinic have international certificates and are recognized all over the world. All staff are interned abroad.\r\n"
+  },
+  {
+    "key": 14,
+    "picture": "https://i.ibb.co/D7rtKHx/doc-1.jpg",
+    "place": "Dr. Anym Jackson",
+    "days": "Cardiologist",
+    "category": "Special",
+    "price": "$10.99",
+    "name": "Cardiology",
+    "about": "Sit dolore tempor veniam duis et adipisicing irure fugiat eiusmod amet reprehenderit magna. Qui est aliqua sint sit ex cupidatat dolor veniam do exercitation pariatur. Amet consequat voluptate nisi dolor sint ea laboris deserunt do quis. Cupidatat veniam veniam eiusmod proident ea occaecat reprehenderit amet ex ea. Excepteur ullamco esse sunt dolor voluptate dolor. Labore voluptate duis esse nisi fugiat occaecat eu non eu esse labore cillum reprehenderit. Occaecat deserunt et ea sit tempor reprehenderit incididunt ullamco Lorem cillum magna commodo eiusmod.\r\n"
+  },
+  {
+    "key": 15,
+    "picture": "https://i.ibb.co/59DG2JS/doc-2.jpg",
+    "place": "Dr. Jaka Alex",
+    "days": "Gynecologist",
+    "category": "General",
+    "price": "$12.99",
+    "name": "Gynecology",
+    "about": "Nulla ex incididunt mollit labore occaecat cillum sit incididunt Lorem consequat deserunt ut deserunt. Irure voluptate enim veniam et est ullamco anim qui aliqua. Consectetur incididunt sint sunt mollit.\r\n"
+  },
+  {
+    "key": 16,
+    "picture": "https://i.ibb.co/JdQHdq0/doc-5.jpg",
+    "place": "Dr. Dan Washington",
+    "days": "Prostheses Special",
+    "category": "General",
+    "price": "$9.99",
+    "name": "Prostheses",
+    "about": "Aliqua culpa veniam magna veniam minim labore reprehenderit dolore pariatur id mollit veniam exercitation fugiat. Cillum aliquip quis pariatur reprehenderit velit nisi cupidatat proident ea dolore exercitation labore culpa laboris. Ex commodo officia tempor enim quis est duis pariatur tempor do exercitation. Duis commodo ea laborum dolore cillum aliqua ex nostrud. Aute pariatur labore reprehenderit laborum.\r\n"
+  },
+  {
+    "key": 17,
+    "picture": "https://i.ibb.co/xgVyPyt/doc-4.jpg",
+    "place": "Dr. Alex Davidson",
+    "days": "Neurologist",
+    "category": "Special",
+    "price": "$6.99",
+    "name": "Neurology",
+    "about": "Cupidatat ad ad officia aliquip dolore excepteur fugiat consequat dolor est adipisicing deserunt. Eiusmod dolor cillum consectetur tempor. Id et ad exercitation ad ut reprehenderit officia. Dolore fugiat non veniam Lorem dolor dolor ad eiusmod non tempor dolore officia Lorem cillum. Sunt enim sit dolor irure magna pariatur exercitation occaecat esse commodo ex consequat. Et esse sunt aliqua mollit non cupidatat minim.\r\n"
+  },
+  {
+    "key": 18,
+    "picture": "https://i.ibb.co/PT0RDKp/doc-3.jpg",
+    "place": "Dr. Mark Jacobson",
+    "days": "Dental Specialist",
+    "category": "General",
+    "price": "$8.99",
+    "name": "Dental",
+    "about": "Minim deserunt commodo tempor ad ex eiusmod elit. Irure exercitation ea ipsum tempor ullamco cillum nulla. Consequat esse deserunt velit elit anim sint nisi nulla officia sunt ut cillum velit.\r\n"
+  },
+  {
+    "key": 19,
+    "picture": "https://i.ibb.co/Xp57Tjj/doc-6.jpg",
+    "place": "Dr. Sandra Walker",
+    "days": "Neurologist",
+    "category": "Special",
+    "price": "$6.99",
+    "name": "Neurology",
+    "about": "Cupidatat ad ad officia aliquip dolore excepteur fugiat consequat dolor est adipisicing deserunt. Eiusmod dolor cillum consectetur tempor. Id et ad exercitation ad ut reprehenderit officia. Dolore fugiat non veniam Lorem dolor dolor ad eiusmod non tempor dolore officia Lorem cillum. Sunt enim sit dolor irure magna pariatur exercitation occaecat esse commodo ex consequat. Et esse sunt aliqua mollit non cupidatat minim.\r\n"
+  },
+  {
+    "key": 20,
+    "picture": "https://i.ibb.co/JqmM53Z/doc-7.jpg",
+    "place": "Dr.Fred Muller",
+    "days": "Cardiologist",
+    "category": "Special",
+    "price": "$10.99",
+    "name": "Cardiology",
+    "about": "Sit dolore tempor veniam duis et adipisicing irure fugiat eiusmod amet reprehenderit magna. Qui est aliqua sint sit ex cupidatat dolor veniam do exercitation pariatur. Amet consequat voluptate nisi dolor sint ea laboris deserunt do quis. Cupidatat veniam veniam eiusmod proident ea occaecat reprehenderit amet ex ea. Excepteur ullamco esse sunt dolor voluptate dolor. Labore voluptate duis esse nisi fugiat occaecat eu non eu esse labore cillum reprehenderit. Occaecat deserunt et ea sit tempor reprehenderit incididunt ullamco Lorem cillum magna commodo eiusmod.\r\n"
+  },
+  {
+    "key": 21,
+    "picture": "https://i.ibb.co/DDLhtS8/doc-8.jpg",
+    "place": "Dr. Linda Jackson",
+    "days": "Therapist",
+    "category": "Special",
+    "price": "$10.99",
+    "name": "Radiology",
+    "about": "Sit dolore tempor veniam duis et adipisicing irure fugiat eiusmod amet reprehenderit magna. Qui est aliqua sint sit ex cupidatat dolor veniam do exercitation pariatur. Amet consequat voluptate nisi dolor sint ea laboris deserunt do quis. Cupidatat veniam veniam eiusmod proident ea occaecat reprehenderit amet ex ea. Excepteur ullamco esse sunt dolor voluptate dolor. Labore voluptate duis esse nisi fugiat occaecat eu non eu esse labore cillum reprehenderit. Occaecat deserunt et ea sit tempor reprehenderit incididunt ullamco Lorem cillum magna commodo eiusmod.\r\n"
+  }
+]
