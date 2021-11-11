@@ -34,7 +34,7 @@ const drawerWidth = 200;
 function Dashboard(props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const { user, logOut } = useAuth();
+    const { user, logOut, admin } = useAuth();
 
     let { path, url } = useRouteMatch();
     const handleDrawerToggle = () => {
@@ -48,31 +48,35 @@ function Dashboard(props) {
             <Link to='/home'>
                 <Button color="inherit">Home</Button>
             </Link>
-            <Link to='/apartments'>
-                <Button color="inherit">Apartments</Button>
-            </Link>
-            <Link to={`${url}`}>
-                <Button color="inherit">MyBookings</Button>
-            </Link>
 
-            <Link to={`${url}/payment`}>
-                <Button color="inherit">Payment</Button>
-            </Link>
-            <Link to={`${url}/review`}>
-                <Button color="inherit">Review</Button>
-            </Link>
-            <Link to={`${url}/managebookings`}>
-                <Button color="inherit">Manage All Bookings</Button>
-            </Link>
-            <Link to={`${url}/addapartment`}>
-                <Button color="inherit">Add A Apartment</Button>
-            </Link>
-            <Link to={`${url}/makeadmin`}>
-                <Button color="inherit">Make Admin</Button>
-            </Link>
-            <Link to={`${url}/manageapartment`}>
-                <Button color="inherit">Manage Apartments</Button>
-            </Link>
+            {admin ? <Box>
+                <Link to={`${url}/managebookings`}>
+                    <Button color="inherit">Manage All Bookings</Button>
+                </Link>
+                <Link to={`${url}/addapartment`}>
+                    <Button color="inherit">Add A Apartment</Button>
+                </Link>
+                <Link to={`${url}/makeadmin`}>
+                    <Button color="inherit">Make Admin</Button>
+                </Link>
+                <Link to={`${url}/manageapartment`}>
+                    <Button color="inherit">Manage Apartments</Button>
+                </Link>
+            </Box> : <Box>
+                <Link to='/apartments'>
+                    <Button color="inherit">Apartments</Button>
+                </Link>
+                <Link to={`${url}`}>
+                    <Button color="inherit">MyBookings</Button>
+                </Link>
+
+                <Link to={`${url}/payment`}>
+                    <Button color="inherit">Payment</Button>
+                </Link>
+                <Link to={`${url}/review`}>
+                    <Button color="inherit">Review</Button>
+                </Link>
+            </Box>}
             <Link onClick={logOut}>
                 <Button color="inherit">Logout</Button>
             </Link>

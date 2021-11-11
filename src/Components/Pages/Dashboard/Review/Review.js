@@ -1,84 +1,42 @@
-import { TextField, Button, Alert } from '@mui/material';
+import { Alert } from '@mui/material';
+import axios from 'axios';
 import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
 import useAuth from '../../../../hooks/useAuth';
+import './Review.css'
 
 const Review = () => {
     const { user } = useAuth()
-    const [reviewSuccess, setReviewSuccess] = useState(false)
-    const initialData = { name: user.displayName, img: '', reviews: '', rating: '' }
-    const [reviewData, setReviewData] = useState(initialData)
-    const handleOnBlur = e => {
-        const field = e.target.name;
-        const value = e.target.value;
-        const newData = { ...reviewData }
-        newData[field] = value
-        setReviewData(newData)
-    }
+    const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-    const handleReviewSubmit = e => {
-        e.preventDefault()
-        const reviews = {
-            ...reviewData
-        }
-        fetch('https://polar-badlands-41295.herokuapp.com/reviews', {
-            method: 'POST',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(reviews)
-        }).then(res => res.json())
-            .then(data => {
-                if (data.insertedId) {
+    const [reviewSuccess, setReviewSuccess] = useState(false)
+
+    const onSubmit = data => {
+        axios.post('https://polar-badlands-41295.herokuapp.com/reviews', data)
+            .then(res => {
+                if (res.data.insertedId) {
                     setReviewSuccess(true)
+                    reset();
                 }
             })
-    }
+    };
     return (
         <div>
             <h2>Give Your Feedback .</h2>
             {reviewSuccess && <Alert severity="success"> Thank you for your valuable feedback!</Alert>}
-            <form onSubmit={handleReviewSubmit}>
-                <TextField
+            <div className='review-form mt-3 mb-5'>
+                <form onSubmit={handleSubmit(onSubmit)}>
 
-                    sx={{ width: '75%', m: 2 }}
-                    id="outlined-size-small"
-                    name="name"
-                    label='Your Name'
-                    onBlur={handleOnBlur}
-                    defaultValue={user.displayName}
-                    size="small"
-                />
-                <TextField
+                    <input {...register("name", { required: true, maxLength: 20 })} required defaultValue={user?.displayName} placeholder='Your Name' />
+                    <input {...register("img")} placeholder='Your image link' />
+                    <input type="number" {...register("rating", { min: 0, max: 5 })} required placeholder='Rate us 0-5' />
+                    {errors.rating && <p>"Rating value should between 0-5"</p>}
+                    <textarea {...register("reviews")} required placeholder=' Your Feedback Message' />
 
-                    sx={{ width: '75%', m: 2 }}
-                    id="outlined-size-small"
-                    name="img"
-                    label='Your Image'
-                    placeholder='Drop a image link'
-                    onBlur={handleOnBlur}
-                    size="small"
-                />
-                <TextField
-                    sx={{ width: '75%', m: 2 }}
-                    id="outlined-multiline-static"
-                    name='reviews'
-                    label="Write your Review Here"
-                    onBlur={handleOnBlur}
-                    multiline
-                    rows={4}
+                    <input type="submit" />
+                </form>
+            </div>
 
-                />
-                <TextField
-                    sx={{ width: '75%', m: 2 }}
-                    id="outlined-size-small"
-                    name='rating'
-                    label='Rate us in 0-5'
-                    type='number'
-                    onBlur={handleOnBlur}
-                    size="small"
-                /> <br />
-                <Button type='submit' variant="outlined">Submit</Button>
-            </form>
         </div>
     );
 };
