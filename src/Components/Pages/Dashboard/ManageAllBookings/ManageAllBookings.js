@@ -23,13 +23,33 @@ const ManageAllBookings = () => {
 
                     if (data.deletedCount) {
                         alert('Booking Deleted Successfully.')
-                        window.location.reload()
+                        const remaining = bookings.filter(booking => booking._id !== id)
+                        setBookings(remaining)
 
                     }
                 });
 
         }
 
+    }
+
+    const handleUpdate = (id) => {
+        const url = `https://polar-badlands-41295.herokuapp.com/bookings/${id}`
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(bookings)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.modifiedCount > 0) {
+                    alert('Updated Successfully')
+                    window.location.reload();
+
+                }
+            })
     }
 
     return (
@@ -60,6 +80,7 @@ const ManageAllBookings = () => {
                                     Booking Status: {booking.status}
                                 </Typography>
                                 <button onClick={() => handleDelete(booking._id)} className="btn bg-warning m-2 ">Delete Booking</button>
+                                <button onClick={() => handleUpdate(booking._id)} className="btn bg-warning m-2 ">Update Booking</button>
                             </CardContent>
 
 

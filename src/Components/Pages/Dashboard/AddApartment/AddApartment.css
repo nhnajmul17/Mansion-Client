@@ -1,0 +1,11 @@
+.addapartment-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addapartment-form form input,textarea{
+    margin-bottom: 10px;
+    width: 40%;
+}
