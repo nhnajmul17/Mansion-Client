@@ -45,7 +45,7 @@ const BookingForm = ({ openBooking, bookingClose, apartment, setBookingSuccess }
             status: 'pending'
         }
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://polar-badlands-41295.herokuapp.com/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -20,6 +20,10 @@ import useAuth from '../../../../hooks/useAuth';
 import Payment from '../Payment/Payment';
 import Review from '../Review/Review';
 import MyOrders from '../MyOrders/MyOrders';
+import ManageAllBookings from '../ManageAllBookings/ManageAllBookings';
+import AddApartment from '../AddApartment/AddApartment';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
+import ManageApartments from '../ManageApartments/ManageApartments';
 
 
 
@@ -56,6 +60,18 @@ function Dashboard(props) {
             </Link>
             <Link to={`${url}/review`}>
                 <Button color="inherit">Review</Button>
+            </Link>
+            <Link to={`${url}/managebookings`}>
+                <Button color="inherit">Manage All Bookings</Button>
+            </Link>
+            <Link to={`${url}/addapartment`}>
+                <Button color="inherit">Add A Apartment</Button>
+            </Link>
+            <Link to={`${url}/makeadmin`}>
+                <Button color="inherit">Make Admin</Button>
+            </Link>
+            <Link to={`${url}/manageapartment`}>
+                <Button color="inherit">Manage Apartments</Button>
             </Link>
             <Link onClick={logOut}>
                 <Button color="inherit">Logout</Button>
@@ -140,6 +156,19 @@ function Dashboard(props) {
                     <Route path={`${path}/payment`}>
                         <Payment></Payment>
                     </Route>
+                    <Route path={`${path}/managebookings`}>
+                        <ManageAllBookings></ManageAllBookings>
+                    </Route>
+                    <Route path={`${path}/addapartment`}>
+                        <AddApartment></AddApartment>
+                    </Route>
+                    <Route path={`${path}/makeadmin`}>
+                        <MakeAdmin></MakeAdmin>
+                    </Route>
+                    <Route path={`${path}/manageapartments`}>
+                        <ManageApartments></ManageApartments>
+                    </Route>
+
                 </Switch>
 
 

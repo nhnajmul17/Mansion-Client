@@ -1,24 +1,20 @@
-import React, { useEffect, useState } from 'react';
 import { Card, CardContent, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import useAuth from '../../../../hooks/useAuth';
+import React, { useEffect, useState } from 'react';
 
-const MyOrders = () => {
-    const { user } = useAuth()
+const ManageAllBookings = () => {
 
     const [bookings, setBookings] = useState([])
-
     useEffect(() => {
-        fetch(`https://polar-badlands-41295.herokuapp.com/mybookings/${user?.email}`)
+        fetch('https://polar-badlands-41295.herokuapp.com/bookings')
             .then(res => res.json())
             .then(data => setBookings(data))
-    }, [user.email])
+    }, [])
 
-
-    const handleDelete = (id) => {
-        const confirm = window.confirm('If you Cancle your Booking, it will be removed permanently.')
+    const handleDelete = id => {
+        const confirm = window.confirm('Do you really want to delete this Booking?')
         if (confirm) {
-            fetch(`https://polar-badlands-41295.herokuapp.com/mybookings/${id}`, {
+            fetch(`https://polar-badlands-41295.herokuapp.com/bookings/${id}`, {
                 method: "DELETE"
             })
                 .then((res) => res.json())
@@ -26,7 +22,7 @@ const MyOrders = () => {
 
 
                     if (data.deletedCount) {
-                        alert('Booking Cancled successfully.')
+                        alert('Booking Deleted Successfully.')
                         window.location.reload()
 
                     }
@@ -38,7 +34,7 @@ const MyOrders = () => {
 
     return (
         <div>
-            <h1>My Bookings</h1>
+            <h2>Manage Bookings</h2>
             <Box sx={{ m: 3 }}>
                 <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
                     {
@@ -55,12 +51,15 @@ const MyOrders = () => {
                                     Area: {booking.apartmentArea}sq ft
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Booked By: {user.displayName}
+                                    Booked By: {booking.userName}
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    Booking Email: {booking.email}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     Booking Status: {booking.status}
                                 </Typography>
-                                <button onClick={() => handleDelete(booking._id)} className="btn bg-warning m-2 ">Cancle Booking</button>
+                                <button onClick={() => handleDelete(booking._id)} className="btn bg-warning m-2 ">Delete Booking</button>
                             </CardContent>
 
 
@@ -68,8 +67,8 @@ const MyOrders = () => {
                     }
                 </Grid>
             </Box>
-        </div >
+        </div>
     );
 };
 
-export default MyOrders;
+export default ManageAllBookings;

@@ -16,7 +16,7 @@ const Booking = () => {
 
     const [apartment, setApartment] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:5000/apartments/${id}`)
+        fetch(`https://polar-badlands-41295.herokuapp.com/apartments/${id}`)
             .then(res => res.json())
             .then(data => {
                 setApartment(data)
