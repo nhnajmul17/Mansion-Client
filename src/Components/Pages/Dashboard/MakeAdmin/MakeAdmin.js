@@ -10,7 +10,7 @@ const MakeAdmin = () => {
     }
     const handleAdmin = e => {
         const user = { email }
-        fetch('https://polar-badlands-41295.herokuapp.comusers', {
+        fetch('https://polar-badlands-41295.herokuapp.com/users', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
