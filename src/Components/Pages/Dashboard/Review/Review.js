@@ -30,7 +30,7 @@ const Review = () => {
                     <input {...register("name", { required: true, maxLength: 20 })} required defaultValue={user?.displayName} placeholder='Your Name' />
                     <input {...register("img")} placeholder='Your image link' />
                     <input type="number" {...register("rating", { min: 0, max: 5 })} required placeholder='Rate us 0-5' />
-                    {errors.rating && <p>"Rating value should between 0-5"</p>}
+                    {errors.rating && <p className='text-danger'>"Rating value should between 0-5"</p>}
                     <textarea {...register("reviews")} required placeholder=' Your Feedback Message' />
 
                     <input type="submit" />

@@ -24,6 +24,7 @@ import ManageAllBookings from '../ManageAllBookings/ManageAllBookings';
 import AddApartment from '../AddApartment/AddApartment';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageApartments from '../ManageApartments/ManageApartments';
+import Dashhome from '../Dashhome/Dashhome';
 
 
 
@@ -48,6 +49,9 @@ function Dashboard(props) {
             <Link to='/home'>
                 <Button color="inherit">Home</Button>
             </Link>
+            <Link to={`${url}`}>
+                Dashboard
+            </Link>
 
             {admin ? <Box>
                 <Link to={`${url}/managebookings`}>
@@ -63,10 +67,8 @@ function Dashboard(props) {
                     <Button color="inherit">Manage Apartments</Button>
                 </Link>
             </Box> : <Box>
-                <Link to='/apartments'>
-                    <Button color="inherit">Apartments</Button>
-                </Link>
-                <Link to={`${url}`}>
+
+                <Link to={`${url}/mybookings`}>
                     <Button color="inherit">MyBookings</Button>
                 </Link>
 
@@ -152,6 +154,9 @@ function Dashboard(props) {
                 <Toolbar />
                 <Switch>
                     <Route exact path={path}>
+                        <Dashhome></Dashhome>
+                    </Route>
+                    <Route path={`${path}/mybookings`}>
                         <MyOrders></MyOrders>
                     </Route>
                     <Route path={`${path}/review`}>
