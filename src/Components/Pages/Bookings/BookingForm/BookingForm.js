@@ -41,7 +41,8 @@ const BookingForm = ({ openBooking, bookingClose, apartment, setBookingSuccess }
             ...bookingInfo,
             apartmentName: name,
             apartmentprice: price,
-            apartmentArea: sqft
+            apartmentArea: sqft,
+            status: 'pending'
         }
 
         fetch('http://localhost:5000/bookings', {

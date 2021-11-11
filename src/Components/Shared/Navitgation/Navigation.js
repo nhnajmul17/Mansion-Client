@@ -14,6 +14,7 @@ const Navigation = () => {
                     <img src={logo} style={{ width: '50px', height: '50px', marginRight: '10px' }} alt="" />
                     <Link style={{ textDecoration: 'none', color: 'white', margin: '5px', fontWeight: 'bold' }} to='/home'>Home</Link>
                     <Link style={{ textDecoration: 'none', color: 'white', margin: '5px', fontWeight: 'bold' }} to='/apartments'>Apartments</Link>
+                    {user.email && <Link style={{ textDecoration: 'none', color: 'white', margin: '5px', fontWeight: 'bold' }} to='/dashboard'>Dashboard</Link>}
 
                     <Typography variant="h5" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
                         Mansion Residence

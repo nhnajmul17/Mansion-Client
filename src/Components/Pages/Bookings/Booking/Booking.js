@@ -28,10 +28,11 @@ const Booking = () => {
     return (
         <div>
             <Navigation></Navigation>
-            {bookingSuccess && <Alert severity="success"> Booked Successfully!</Alert>}
+
             <div className='m-3'>
                 <h1 className='text-warning'>{apartment?.name} </h1>
                 <img className='rounded' src={apartment.picture} alt="" />
+                {bookingSuccess && <Alert severity="success"> Booked Successfully!</Alert>}
                 <p className='m-5'>{apartment.about}</p>
                 <h2 style={{ color: 'gray' }}>It includes {apartment.room} Rooms and {apartment.bath} Bath</h2>
                 <h3 className='text-info'>Monthly rent {apartment.price} only</h3>
