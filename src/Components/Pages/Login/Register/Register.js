@@ -11,7 +11,7 @@ const Register = () => {
     const { user, loading, register, error } = useAuth()
     const history = useHistory()
 
-    const handleOnBlur = e => {
+    const handleOnChange = e => {
         const field = e.target.name;
         const value = e.target.value;
         const newData = { ...loginData }
@@ -37,7 +37,7 @@ const Register = () => {
                         label="Your Name"
                         name='name'
                         type='text'
-                        onBlur={handleOnBlur}
+                        onChange={handleOnChange}
                     />
                     <TextField
                         sx={{ width: '50%', m: 1 }}
@@ -46,7 +46,7 @@ const Register = () => {
                         label="Your Email"
                         name='email'
                         type='email'
-                        onBlur={handleOnBlur}
+                        onChange={handleOnChange}
                     />
                     <TextField
                         sx={{ width: '50%', m: 1 }}
@@ -55,7 +55,7 @@ const Register = () => {
                         label="Your Password"
                         name='password'
                         type='password'
-                        onBlur={handleOnBlur}
+                        onChange={handleOnChange}
                     />
                     <Button sx={{ width: '50%', m: 1 }} type='submit' variant='contained'>Register</Button> <br />
                     <NavLink style={{ textDecoration: 'none' }} to='/login'>

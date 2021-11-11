@@ -18,6 +18,10 @@ const Navigation = () => {
                     <Typography variant="h5" component="div" sx={{ flexGrow: 1, fontWeight: 'bold' }}>
                         Mansion Residence
                     </Typography>
+                    {user?.email && <Typography variant="body1" component="div" >
+                        Name: {user.displayName}
+                    </Typography>}
+
                     {user?.email ? <Button onClick={logOut} color="inherit">Logout</Button> : <Link style={{ textDecoration: 'none', color: 'white' }} to='/login'> <Button color="inherit">Login</Button></Link>}
                 </Toolbar>
             </AppBar>

@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material';
+import { Grid, LinearProgress, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
 import Navigation from '../../../Shared/Navitgation/Navigation';
@@ -6,11 +6,17 @@ import ApartmentDetails from '../ApartmentDetails/ApartmentDetails';
 
 const AllApartments = () => {
     const [apartments, setApartments] = useState([])
+    const [loading, setLoading] = useState(true);
     useEffect(() => {
         fetch('http://localhost:5000/apartments')
             .then(res => res.json())
-            .then(data => setApartments(data))
+            .then(data => {
+                setApartments(data)
+                setLoading(false)
+            })
     }, [])
+    if (loading) { return <LinearProgress color="success" /> }
+
     return (
         <>
             <Navigation></Navigation>

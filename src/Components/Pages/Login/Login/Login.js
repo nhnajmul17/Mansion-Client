@@ -10,7 +10,7 @@ const Login = () => {
     const location = useLocation();
     const history = useHistory()
 
-    const handleOnBlur = e => {
+    const handleOnChange = e => {
         const field = e.target.name;
         const value = e.target.value;
         const newLoginData = { ...loginData };
@@ -38,7 +38,7 @@ const Login = () => {
                         label="Your Email"
                         type='email'
                         name='email'
-                        onBlur={handleOnBlur}
+                        onChange={handleOnChange}
 
                     />
                     <TextField
@@ -48,7 +48,7 @@ const Login = () => {
                         label="Your Password"
                         type='password'
                         name='password'
-                        onBlur={handleOnBlur}
+                        onChange={handleOnChange}
                     />
                     <Button sx={{ width: '50%', m: 1 }} type='submit' variant='contained'>Login</Button> <br />
                     <NavLink style={{ textDecoration: 'none' }} to='/register'>
