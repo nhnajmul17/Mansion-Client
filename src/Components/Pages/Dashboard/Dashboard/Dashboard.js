@@ -41,6 +41,9 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
+            <Link to='/home'>
+                <Button color="inherit">Home</Button>
+            </Link>
             <Link to='/apartments'>
                 <Button color="inherit">Apartments</Button>
             </Link>
