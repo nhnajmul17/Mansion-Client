@@ -1,6 +1,7 @@
 import { Grid, LinearProgress, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
+import Footer from '../../../Shared/Footer/Footer';
 import Navigation from '../../../Shared/Navitgation/Navigation';
 import ApartmentDetails from '../ApartmentDetails/ApartmentDetails';
 
@@ -39,6 +40,7 @@ const AllApartments = () => {
                 </Box>
 
             </Box >
+            <Footer></Footer>
         </>
     );
 };

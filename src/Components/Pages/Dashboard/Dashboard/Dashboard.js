@@ -69,7 +69,7 @@ function Dashboard(props) {
                     <Button color="inherit">Make Admin</Button>
                 </Link>
                 <Divider />
-                <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/manageapartment`}>
+                <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/manageapartments`}>
                     <Button color="inherit">Manage Apartments</Button>
                 </Link>
 
