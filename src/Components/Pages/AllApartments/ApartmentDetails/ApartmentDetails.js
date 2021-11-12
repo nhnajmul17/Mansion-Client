@@ -1,14 +1,16 @@
 import React from 'react';
 import { Card, CardContent, CardMedia, Grid, Button, Typography, CardActions } from '@mui/material';
 import { Link } from 'react-router-dom';
+import './ApartmentDetails.css'
 
 const ApartmentDetails = (props) => {
     const { name, picture, price, sqft, room, bath, parking, _id } = props.apartment;
 
     return (
         <Grid item xs={4} sm={4} md={4}>
-            <Card sx={{ maxWidth: 345 }}>
+            <Card className='photo' sx={{ maxWidth: 345 }}>
                 <CardMedia
+                    className='image'
                     component="img"
                     height="140"
                     image={picture}

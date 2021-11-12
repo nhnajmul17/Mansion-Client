@@ -7,12 +7,13 @@ import p3 from '../../../../images/partners/p03.jpg'
 import p4 from '../../../../images/partners/p04.jpg'
 import p5 from '../../../../images/partners/p05.jpg'
 import p6 from '../../../../images/partners/p06.jpg'
+import './Partners.css'
 
 const Partners = () => {
     return (
         <Box sx={{ m: 3 }}>
             <Typography variant='h4' sx={{ fontWeight: 'bold', mb: 5, fontStyle: 'oblique' }} color='text.secondary'>Our Partner Companies Includes </Typography>
-            <Grid container spacing={2}>
+            <Grid className="photo" container spacing={2}>
                 <Grid item xs={6} md={3}>
                     <img style={{ width: '150px' }} src={p1} alt="" />
                 </Grid>

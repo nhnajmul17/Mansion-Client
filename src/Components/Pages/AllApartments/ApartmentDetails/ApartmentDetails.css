@@ -1,0 +1,5 @@
+.photo:hover .image {
+    transform:scale(1.2);
+    overflow:hidden;
+    transition: 1.5s;
+}

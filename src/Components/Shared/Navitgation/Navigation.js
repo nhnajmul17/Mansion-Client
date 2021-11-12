@@ -6,13 +6,14 @@ import useAuth from '../../../hooks/useAuth';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../../images/logo.jpg'
+import './Navigation.css'
 
 const Navigation = () => {
     const { user, logOut } = useAuth();
     return (
-        <Navbar sticky='top' collapseOnSelect expand="lg" style={{ backgroundColor: '#3BB7B7' }} variant="dark">
+        <Navbar className='logo' sticky='top' collapseOnSelect expand="lg" style={{ backgroundColor: '#3BB7B7' }} variant="dark">
             <Container>
-                <Navbar.Brand>
+                <Navbar.Brand >
                     <img
                         src={logo}
                         width="30"
