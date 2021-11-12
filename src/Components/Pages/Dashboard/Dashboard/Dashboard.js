@@ -25,6 +25,7 @@ import AddApartment from '../AddApartment/AddApartment';
 import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import ManageApartments from '../ManageApartments/ManageApartments';
 import Dashhome from '../Dashhome/Dashhome';
+import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 
 
 
@@ -165,18 +166,18 @@ function Dashboard(props) {
                     <Route path={`${path}/payment`}>
                         <Payment></Payment>
                     </Route>
-                    <Route path={`${path}/managebookings`}>
+                    <AdminRoute path={`${path}/managebookings`}>
                         <ManageAllBookings></ManageAllBookings>
-                    </Route>
-                    <Route path={`${path}/addapartment`}>
+                    </AdminRoute>
+                    <AdminRoute path={`${path}/addapartment`}>
                         <AddApartment></AddApartment>
-                    </Route>
-                    <Route path={`${path}/makeadmin`}>
+                    </AdminRoute>
+                    <AdminRoute path={`${path}/makeadmin`}>
                         <MakeAdmin></MakeAdmin>
-                    </Route>
-                    <Route path={`${path}/manageapartments`}>
+                    </AdminRoute>
+                    <AdminRoute path={`${path}/manageapartments`}>
                         <ManageApartments></ManageApartments>
-                    </Route>
+                    </AdminRoute>
 
                 </Switch>
 
