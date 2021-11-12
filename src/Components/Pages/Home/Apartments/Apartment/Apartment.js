@@ -27,7 +27,7 @@ const Apartment = (props) => {
                     <Link style={{ textDecoration: 'none' }} to={`/booking/${_id}`}>  <Button variant='contained' color='warning' size="small">Book Now</Button></Link>
                 </CardActions>
             </Card>
-        </Grid>
+        </Grid >
 
     );
 };

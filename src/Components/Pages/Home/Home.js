@@ -5,6 +5,7 @@ import Features from './Features/Features';
 import Partners from './Partners/Partners';
 import Apartments from './Apartments/Apartments'
 import Review from './Review/Review';
+import Footer from '../../Shared/Footer/Footer';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Features></Features>
             <Review></Review>
             <Partners></Partners>
+            <Footer></Footer>
         </div>
     );
 };

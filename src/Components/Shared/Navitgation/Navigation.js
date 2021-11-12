@@ -3,6 +3,8 @@ import React from 'react';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'
 import logo from '../../../images/logo.jpg'
 
 const Navigation = () => {
@@ -16,7 +18,7 @@ const Navigation = () => {
                         width="30"
                         height="30"
                         className="d-inline-block align-top"
-                        alt="React Bootstrap logo"
+                        alt="Mansion logo"
                     />
                 </Navbar.Brand>
                 <Navbar.Brand as={Link} to="/home" className='fw-bold'>Mansion Residence</Navbar.Brand>
@@ -31,7 +33,7 @@ const Navigation = () => {
                         {user?.email && <p className='text-white me-3'>
                             Name: {user.displayName}
                         </p>}
-                        {user?.email ? <Button onClick={logOut} className='btn btn-danger'>Logout</Button> : <Link to='/login'> <Button className='btn btn-danger'>Login</Button></Link>}
+                        {user?.email ? <Button onClick={logOut} className='btn btn-danger'>Logout <FontAwesomeIcon icon={faSignOutAlt} className='text-dark' /></Button> : <Link to='/login'> <Button className='btn btn-danger'>Login</Button></Link>}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

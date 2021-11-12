@@ -1,6 +1,8 @@
 import { Card, CardContent, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash, faPenAlt } from '@fortawesome/free-solid-svg-icons'
 
 const ManageAllBookings = () => {
 
@@ -79,8 +81,8 @@ const ManageAllBookings = () => {
                                 <Typography variant="body2" color="text.secondary">
                                     Booking Status: {booking.status}
                                 </Typography>
-                                <button onClick={() => handleDelete(booking._id)} className="btn bg-warning m-2 ">Delete Booking</button>
-                                <button onClick={() => handleUpdate(booking._id)} className="btn bg-warning m-2 ">Update Booking</button>
+                                <button onClick={() => handleDelete(booking._id)} className="btn bg-warning m-2 "> <FontAwesomeIcon icon={faTrash} className='text-dark' /> Delete Booking</button>
+                                <button onClick={() => handleUpdate(booking._id)} className="btn bg-warning m-2 "> <FontAwesomeIcon icon={faPenAlt} className='text-dark' /> Update Booking</button>
                             </CardContent>
 
 
