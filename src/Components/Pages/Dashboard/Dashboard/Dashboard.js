@@ -44,7 +44,9 @@ function Dashboard(props) {
     };
 
     const drawer = (
-        <div>
+        <div
+            style={{ backgroundColor: '#3BB7B7' }}
+        >
             <Toolbar />
             <Divider />
             <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to='/home'>
@@ -128,6 +130,7 @@ function Dashboard(props) {
                 </Toolbar>
             </AppBar>
             <Box
+
                 component="nav"
                 sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
                 aria-label="mailbox folders"
@@ -160,6 +163,7 @@ function Dashboard(props) {
                 </Drawer>
             </Box>
             <Box
+                style={{ backgroundColor: '#3BB7B7' }}
                 component="main"
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
