@@ -47,42 +47,52 @@ function Dashboard(props) {
         <div>
             <Toolbar />
             <Divider />
-            <Link to='/home'>
+            <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to='/home'>
                 <Button color="inherit">Home</Button>
             </Link>
-            <Link to={`${url}`}>
+            <Divider />
+            <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}`}>
                 Dashboard
             </Link>
+            <Divider />
 
             {admin ? <Box>
-                <Link to={`${url}/managebookings`}>
+                <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/managebookings`}>
                     <Button color="inherit">Manage All Bookings</Button>
                 </Link>
-                <Link to={`${url}/addapartment`}>
+                <Divider />
+                <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/addapartment`}>
                     <Button color="inherit">Add A Apartment</Button>
                 </Link>
-                <Link to={`${url}/makeadmin`}>
+                <Divider />
+                <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/makeadmin`}>
                     <Button color="inherit">Make Admin</Button>
                 </Link>
-                <Link to={`${url}/manageapartment`}>
+                <Divider />
+                <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/manageapartment`}>
                     <Button color="inherit">Manage Apartments</Button>
                 </Link>
+                <Divider />
             </Box> : <Box>
 
-                <Link to={`${url}/mybookings`}>
+                <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/mybookings`}>
                     <Button color="inherit">MyBookings</Button>
                 </Link>
+                <Divider />
 
-                <Link to={`${url}/payment`}>
+                <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/payment`}>
                     <Button color="inherit">Payment</Button>
                 </Link>
-                <Link to={`${url}/review`}>
+                <Divider />
+                <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/review`}>
                     <Button color="inherit">Review</Button>
                 </Link>
+                <Divider />
             </Box>}
-            <Link onClick={logOut}>
+            <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} onClick={logOut}>
                 <Button color="inherit">Logout</Button>
             </Link>
+            <Divider />
 
 
         </div>
@@ -99,6 +109,7 @@ function Dashboard(props) {
                     width: { sm: `calc(100% - ${drawerWidth}px)` },
                     ml: { sm: `${drawerWidth}px` },
                 }}
+                style={{ backgroundColor: '#3BB7B7' }}
             >
                 <Toolbar>
                     <IconButton

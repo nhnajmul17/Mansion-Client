@@ -8,7 +8,7 @@ import logo from '../../../images/logo.jpg'
 const Navigation = () => {
     const { user, logOut } = useAuth();
     return (
-        <Navbar sticky='top' collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar sticky='top' collapseOnSelect expand="lg" style={{ backgroundColor: '#3BB7B7' }} variant="dark">
             <Container>
                 <Navbar.Brand>
                     <img
