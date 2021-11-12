@@ -72,7 +72,7 @@ function Dashboard(props) {
                 <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/manageapartment`}>
                     <Button color="inherit">Manage Apartments</Button>
                 </Link>
-                <Divider />
+
             </Box> : <Box>
 
                 <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/mybookings`}>
@@ -87,12 +87,12 @@ function Dashboard(props) {
                 <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/review`}>
                     <Button color="inherit">Review</Button>
                 </Link>
-                <Divider />
+
             </Box>}
-            <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} onClick={logOut}>
-                <Button color="inherit">Logout</Button>
-            </Link>
-            <Divider />
+
+            <Button style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} onClick={logOut} color="inherit">Logout</Button>
+
+
 
 
         </div>

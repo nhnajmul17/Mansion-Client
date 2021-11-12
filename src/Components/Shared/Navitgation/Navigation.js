@@ -36,7 +36,23 @@ const Navigation = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-        /* <Box sx={{ flexGrow: 1 }}>
+
+
+    );
+};
+
+export default Navigation;
+
+
+
+
+
+
+
+
+//nav bar using MUI
+
+/* <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static" sx={{ bgcolor: '#3BB7B7' }}>
                 <Toolbar>
                     <img src={logo} style={{ width: '50px', height: '50px', marginRight: '10px' }} alt="" />
@@ -55,8 +71,3 @@ const Navigation = () => {
                 </Toolbar>
             </AppBar>
         </Box > */
-
-    );
-};
-
-export default Navigation;
