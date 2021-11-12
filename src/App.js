@@ -13,6 +13,7 @@ import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import PrivateRoute from './Components/Pages/Login/PrivateRoute/PrivateRoute';
 import Booking from './Components/Pages/Bookings/Booking/Booking';
 import Dashboard from './Components/Pages/Dashboard/Dashboard/Dashboard';
+import Error from './Components/Pages/Error/Error';
 
 function App() {
   return (
@@ -40,6 +41,9 @@ function App() {
             </Route>
             <Route path='/register'>
               <Register></Register>
+            </Route>
+            <Route path='*'>
+              <Error></Error>
             </Route>
 
           </Switch>
