@@ -88,10 +88,12 @@ const BookingForm = ({ openBooking, bookingClose, apartment, setBookingSuccess }
                             sx={{ width: '90%', m: 2 }}
                             id="outlined-size-small"
                             defaultValue={name}
+                            label='Apartment Type'
+
                             size="small"
                         />
                         <TextField
-
+                            label='Name'
                             sx={{ width: '90%', m: 2 }}
                             id="outlined-size-small"
                             name="userName"
@@ -104,6 +106,7 @@ const BookingForm = ({ openBooking, bookingClose, apartment, setBookingSuccess }
                             sx={{ width: '90%', m: 2 }}
                             id="outlined-size-small"
                             name='email'
+                            label='Email'
                             onBlur={handleOnBlur}
                             defaultValue={user.email}
                             size="small"
@@ -113,6 +116,7 @@ const BookingForm = ({ openBooking, bookingClose, apartment, setBookingSuccess }
                             sx={{ width: '90%', m: 2 }}
                             id="outlined-size-small"
                             name='phone'
+                            label='Phone Number'
                             onBlur={handleOnBlur}
                             placeholder='Phone Number'
                             size="small"
@@ -122,6 +126,7 @@ const BookingForm = ({ openBooking, bookingClose, apartment, setBookingSuccess }
                             sx={{ width: '90%', m: 2 }}
                             id="outlined-size-small"
                             name='price'
+                            label='Price'
                             defaultValue={price}
                             size="small"
                         />
@@ -130,6 +135,8 @@ const BookingForm = ({ openBooking, bookingClose, apartment, setBookingSuccess }
                             sx={{ width: '90%', m: 2 }}
                             id="outlined-size-small"
                             name='sqft'
+                            label='Area'
+
                             defaultValue={sqft}
                             size="small"
                         />

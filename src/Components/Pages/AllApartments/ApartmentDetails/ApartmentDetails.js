@@ -21,7 +21,7 @@ const ApartmentDetails = (props) => {
                         {name}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        Rent: {price} <small>/month</small>
+                        Rent: ${price} <small>/month</small>
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         Area: {sqft}sq ft

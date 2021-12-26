@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Card, CardContent, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import useAuth from '../../../../hooks/useAuth';
+import { Link } from 'react-router-dom';
 
 const MyOrders = () => {
     const { user } = useAuth()
@@ -61,6 +62,8 @@ const MyOrders = () => {
                                     Booking Status: {booking.status}
                                 </Typography>
                                 <button onClick={() => handleDelete(booking._id)} className="btn bg-warning m-2 ">Cancle Booking</button>
+                                {booking.payment ? 'Paid' : <Link to={`/dashboard/payment/${booking._id}`}> <button className="btn bg-warning m-2 ">Pay</button></Link>}
+
                             </CardContent>
 
 

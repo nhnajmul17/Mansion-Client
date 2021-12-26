@@ -35,7 +35,7 @@ const Booking = () => {
                 {bookingSuccess && <Alert severity="success"> Booked Successfully!</Alert>}
                 <p className='m-5'>{apartment.about}</p>
                 <h2 style={{ color: 'gray' }}>It includes {apartment.room} Rooms and {apartment.bath} Bath</h2>
-                <h3 className='text-info'>Monthly rent {apartment.price} only</h3>
+                <h3 className='text-info'>Monthly rent ${apartment.price} only</h3>
                 <h2>{apartment.sqft} sqft Apartment </h2>
                 <p style={{ fontWeight: 'bold' }} >Parking Facilities: {apartment.parking}</p>
                 <Button onClick={handleOpenBooking} variant="contained">Book Apartment</Button>
