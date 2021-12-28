@@ -47,6 +47,7 @@ const CheckoutForm = ({ booking }) => {
         }
         else {
             setError('')
+            console.log(paymentMethod);
         }
 
         //payment intent

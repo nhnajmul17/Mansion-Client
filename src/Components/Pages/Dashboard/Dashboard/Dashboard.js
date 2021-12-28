@@ -82,10 +82,10 @@ function Dashboard(props) {
                 </Link>
                 <Divider />
 
-                <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/payment`}>
+                {/* <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/payment`}>
                     <Button color="inherit">Payment</Button>
                 </Link>
-                <Divider />
+                <Divider /> */}
                 <Link style={{ textDecoration: 'none', backgroundColor: '#3BB7B7', color: 'white' }} to={`${url}/review`}>
                     <Button color="inherit">Review</Button>
                 </Link>
