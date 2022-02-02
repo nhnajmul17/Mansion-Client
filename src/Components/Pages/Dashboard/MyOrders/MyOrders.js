@@ -3,15 +3,28 @@ import { Card, CardContent, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import useAuth from '../../../../hooks/useAuth';
 import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const MyOrders = () => {
     const { user } = useAuth()
 
     const [bookings, setBookings] = useState([])
+    const navigate = useHistory()
 
     useEffect(() => {
-        fetch(`https://polar-badlands-41295.herokuapp.com/mybookings/${user?.email}`)
-            .then(res => res.json())
+        fetch(`https://polar-badlands-41295.herokuapp.com/mybookings/${user?.email}`, {
+            headers: {
+                'authorization': `Bearer ${localStorage.getItem('idtoken')}`
+            }
+        })
+            .then(res => {
+                if (res.status === 200) {
+                    return res.json()
+                }
+                else if (res.status === 401) {
+                    navigate.push('/login')
+                }
+            })
             .then(data => setBookings(data))
     }, [user.email])
 

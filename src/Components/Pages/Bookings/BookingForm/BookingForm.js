@@ -48,7 +48,8 @@ const BookingForm = ({ openBooking, bookingClose, apartment, setBookingSuccess }
         fetch('https://polar-badlands-41295.herokuapp.com/bookings', {
             method: 'POST',
             headers: {
-                'content-type': 'application/json'
+                'content-type': 'application/json',
+                'authorization': `Bearer  ${localStorage.getItem('idtoken')}`
             },
             body: JSON.stringify(booking)
         })

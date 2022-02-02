@@ -13,7 +13,8 @@ const MakeAdmin = () => {
         fetch('https://polar-badlands-41295.herokuapp.com/users', {
             method: 'PUT',
             headers: {
-                'content-type': 'application/json'
+                'content-type': 'application/json',
+                'authorization': `Bearer ${localStorage.getItem('idtoken')}`
             },
             body: JSON.stringify(user)
         })
