@@ -69,7 +69,7 @@ const useFirebase = () => {
 
     const saveUser = (email, displayName) => {
         const user = { email, displayName };
-        fetch('https://polar-badlands-41295.herokuapp.com/users', {
+        fetch('https://mansion-server.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -80,7 +80,7 @@ const useFirebase = () => {
     }
 
     useEffect(() => {
-        fetch(`https://polar-badlands-41295.herokuapp.com/users/${user.email}`)
+        fetch(`https://mansion-server.vercel.app/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
 

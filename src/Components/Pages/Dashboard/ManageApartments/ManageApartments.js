@@ -8,7 +8,7 @@ const ManageApartments = () => {
 
     const [apartments, setApartments] = useState([]);
     useEffect(() => {
-        fetch('https://polar-badlands-41295.herokuapp.com/apartments')
+        fetch('https://mansion-server.vercel.app/apartments')
             .then(res => res.json())
             .then(data => setApartments(data))
     }, [])
@@ -17,7 +17,7 @@ const ManageApartments = () => {
     const handleDelete = id => {
         const confirm = window.confirm('Do you really want to delete this Apartment?')
         if (confirm) {
-            fetch(`https://polar-badlands-41295.herokuapp.com/apartments/${id}`, {
+            fetch(`https://mansion-server.vercel.app/apartments/${id}`, {
                 method: "DELETE"
             })
                 .then((res) => res.json())

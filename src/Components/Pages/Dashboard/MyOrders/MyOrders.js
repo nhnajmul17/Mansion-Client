@@ -12,7 +12,7 @@ const MyOrders = () => {
     const navigate = useHistory()
 
     useEffect(() => {
-        fetch(`https://polar-badlands-41295.herokuapp.com/mybookings/${user?.email}`, {
+        fetch(`https://mansion-server.vercel.app/mybookings/${user?.email}`, {
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('idtoken')}`
             }
@@ -32,7 +32,7 @@ const MyOrders = () => {
     const handleDelete = (id) => {
         const confirm = window.confirm('If you Cancle your Booking, it will be removed permanently.')
         if (confirm) {
-            fetch(`https://polar-badlands-41295.herokuapp.com/mybookings/${id}`, {
+            fetch(`https://mansion-server.vercel.app/mybookings/${id}`, {
                 method: "DELETE"
             })
                 .then((res) => res.json())

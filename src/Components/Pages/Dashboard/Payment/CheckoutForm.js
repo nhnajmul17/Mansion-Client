@@ -13,7 +13,7 @@ const CheckoutForm = ({ booking }) => {
     const [clientSecret, setClientSecret] = useState('')
 
     useEffect(() => {
-        fetch('https://polar-badlands-41295.herokuapp.com/create-payment-intent', {
+        fetch('https://mansion-server.vercel.app/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -79,7 +79,7 @@ const CheckoutForm = ({ booking }) => {
                 transaction: paymentIntent.client_secret.slice('_secret')[0]
 
             }
-            const url = `https://polar-badlands-41295.herokuapp.com/bookings/${_id}`
+            const url = `https://mansion-server.vercel.app/bookings/${_id}`
             fetch(url, {
                 method: 'PUT',
                 headers: {

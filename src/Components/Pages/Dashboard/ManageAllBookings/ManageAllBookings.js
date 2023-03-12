@@ -8,7 +8,7 @@ const ManageAllBookings = () => {
 
     const [bookings, setBookings] = useState([])
     useEffect(() => {
-        fetch('https://polar-badlands-41295.herokuapp.com/bookings')
+        fetch('https://mansion-server.vercel.app/bookings')
             .then(res => res.json())
             .then(data => setBookings(data))
     }, [])
@@ -16,7 +16,7 @@ const ManageAllBookings = () => {
     const handleDelete = id => {
         const confirm = window.confirm('Do you really want to delete this Booking?')
         if (confirm) {
-            fetch(`https://polar-badlands-41295.herokuapp.com/bookings/${id}`, {
+            fetch(`https://mansion-server.vercel.app/bookings/${id}`, {
                 method: "DELETE"
             })
                 .then((res) => res.json())
@@ -36,7 +36,7 @@ const ManageAllBookings = () => {
     }
 
     const handleUpdate = (id) => {
-        const url = `https://polar-badlands-41295.herokuapp.com/bookings/${id}`
+        const url = `https://mansion-server.vercel.app/bookings/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -13,7 +13,7 @@ const Payment = () => {
     const { bookingId } = useParams();
     const [booking, setBooking] = useState({})
     useEffect(() => {
-        fetch(`https://polar-badlands-41295.herokuapp.com/bookings/${bookingId}`)
+        fetch(`https://mansion-server.vercel.app/bookings/${bookingId}`)
             .then(res => res.json())
             .then(data => setBooking(data))
     }, [bookingId])

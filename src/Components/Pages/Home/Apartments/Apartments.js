@@ -5,7 +5,7 @@ import Apartment from './Apartment/Apartment';
 const Apartments = () => {
     const [apartments, setApartments] = useState([])
     useEffect(() => {
-        fetch('https://polar-badlands-41295.herokuapp.com/apartments')
+        fetch('https://mansion-server.vercel.app/apartments')
             .then(res => res.json())
             .then(data => setApartments(data.slice(0, 6)))
     }, [])

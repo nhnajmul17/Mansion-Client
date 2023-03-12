@@ -16,7 +16,7 @@ const Booking = () => {
 
     const [apartment, setApartment] = useState({})
     useEffect(() => {
-        fetch(`https://polar-badlands-41295.herokuapp.com/apartments/${id}`)
+        fetch(`https://mansion-server.vercel.app/apartments/${id}`)
             .then(res => res.json())
             .then(data => {
                 setApartment(data)

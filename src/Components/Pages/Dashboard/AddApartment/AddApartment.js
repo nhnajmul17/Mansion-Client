@@ -6,7 +6,7 @@ import './AddApartment.css'
 const AddApartment = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        axios.post('https://polar-badlands-41295.herokuapp.com/apartments', data)
+        axios.post('https://mansion-server.vercel.app/apartments', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Apartment Added Successfully')

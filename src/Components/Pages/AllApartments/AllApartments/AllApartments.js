@@ -9,7 +9,7 @@ const AllApartments = () => {
     const [apartments, setApartments] = useState([])
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch('https://polar-badlands-41295.herokuapp.com/apartments')
+        fetch('https://mansion-server.vercel.app/apartments')
             .then(res => res.json())
             .then(data => {
                 setApartments(data)

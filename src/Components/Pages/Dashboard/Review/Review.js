@@ -12,7 +12,7 @@ const Review = () => {
     const [reviewSuccess, setReviewSuccess] = useState(false)
 
     const onSubmit = data => {
-        axios.post('https://polar-badlands-41295.herokuapp.com/reviews', data)
+        axios.post('https://mansion-server.vercel.app/reviews', data)
             .then(res => {
                 if (res.data.insertedId) {
                     setReviewSuccess(true)
